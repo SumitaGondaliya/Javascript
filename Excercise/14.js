@@ -14,8 +14,9 @@ For an added challenge, try to solve this without using strings.
 Alternatively, you can solve this via a recursive approach.*/
 
 function count(n) {
-  if (n / 10 == 0){return 1}
+  if (n / 10 == 0)
+  return 
 
-  return 1 + count(parseInt(n / 10));
+  
 }
 console.log("Integer count is", count(654));
