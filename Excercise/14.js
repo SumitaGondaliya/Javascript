@@ -14,9 +14,15 @@ For an added challenge, try to solve this without using strings.
 Alternatively, you can solve this via a recursive approach.*/
 
 function count(n) {
-  if (n / 10 == 0)
-  return 
+  var count = 0;
+  if (n >= 1) ++count;
 
-  
+  while (n / 10 >= 1) {
+    n /= 10;
+    ++count;
+  }
+
+  return count;
 }
+
 console.log("Integer count is", count(654));
