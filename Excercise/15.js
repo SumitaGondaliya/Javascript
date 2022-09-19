@@ -14,15 +14,7 @@ You can expect valid strings for all test cases.
 
 
 function maxWord(arr){
-    var longestWord= arr[0];
-    for(var i = 0; i < arr.length;i++){
-        word = arr[i];
-        if(word.length > longestWord.length){
-            longestWord = word;
-        }
-
-    }
-    return longestWord;
+    
 }
 
 console.log("This words has four letters",maxWord(["Tomato","Potato","Pair"]))
