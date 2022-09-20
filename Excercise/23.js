@@ -17,20 +17,20 @@ Notes
 No empty array in Tests.
 Each array element ≥ 0*/
 
-const arr =[1, 3, 3, 1, 10]
+const arr = [1, 3, 3, 1, 10];
 const arraySum = (arr = []) => {
-   const res = arr.map(i => {
-      if(i % 2 === 0){
-         return i * i;
-      }else{
-         return Math.sqrt(i);
-      }
-   })
-   const sum = res.reduce((accumulator, currentvalue) => accumulator + currentvalue);
-   const result = sum. toFixed(2)
-   return result
-
-}
-console.log(arraySum(arr))
-console.log(arraySum([1, 31, 3, 11, 0]))
-
+  const res = arr.map((i) => {
+    if (i % 2 === 0) {
+      return i * i;
+    } else {
+      return Math.sqrt(i);
+    }
+  });
+  const sum = res.reduce(
+    (accumulator, currentvalue) => accumulator + currentvalue
+  );
+  const result = sum.toFixed(2);
+  return result;
+};
+console.log(arraySum(arr));
+console.log(arraySum([1, 31, 3, 11, 0]));
